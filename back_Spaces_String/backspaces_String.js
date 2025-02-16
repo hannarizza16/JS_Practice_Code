@@ -13,7 +13,6 @@ const processString = (s) => {
     
     return stack.join('');
 }
-
 // Test cases
 console.log(processString("abc#d##c"));      // "ac"
 console.log(processString("abc##d######"));  // ""
