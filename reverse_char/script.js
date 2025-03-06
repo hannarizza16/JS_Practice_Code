@@ -1,11 +1,11 @@
-// const solve = (str) => {
-//     return str.split(' ')
-//     .map(word => word.split('').reverse().join(''))
-//     .reverse().join(' ');
-// };
-// console.log(solve('hello worlds')); // olleh sdlrow
+const solve = (str) => {
+    return str.split(' ')
+    .map(word => word.split('').reverse().join(''))
+    .reverse().join(' ');
+};
+console.log(solve('hello worlds')); // olleh sdlrow
 
-
+````````````````````````
 
 function solve(str) {
     let letters = []; // Store non-space characters
