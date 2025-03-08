@@ -73,3 +73,20 @@ console.log(getMonthName(3)); // Output: March
 console.log(getMonthName(11)); // Output: November
 console.log(getMonthName(15)); // Output: Invalid month number
 
+console.log("=====Example 1============");
+
+let coffeeType = "latte";
+
+switch (coffeeType) {
+    case "latte":
+        console.log('latte')
+        break;
+    case "espresso":
+        console.log('espresso')
+        break;
+    case "cappuccinno":
+        console.log('cappuccino')
+        break;
+    default:
+        console.log('Invalid Coffee Type')
+}
