@@ -90,3 +90,23 @@ switch (coffeeType) {
     default:
         console.log('Invalid Coffee Type')
 }
+
+
+console.log("===========");
+
+let getDayOfWeek = (dayNumber) => {
+
+    const daysOfTheWeek ={
+        1 : "Sunday",
+        2 : "Monday",
+        3 : "Tuesday",
+        4 : "Wednesday",
+        5 : "Thursday",
+        6 : "Friday",
+        7 : "Saturday",
+
+    };
+
+    return daysOfTheWeek[dayNumber] ||"Enter from 1 - 7";
+} 
+console.log(getDayOfWeek(9)); // Enter from 1-7
