@@ -4,7 +4,7 @@ const x = 5;
 const y = 6;
 if ((x > 5) && (y < 10)) { // if true this will run
     console.log("a")
-}else{ // if false this will run
+} else { // if false this will run
     console.log("b");
 }
 
@@ -26,5 +26,6 @@ console.log(isRightAge4);
 
 console.log("------------");
 
-let isRightAge5 = age > 18 ? 'rigth' : age == 17 ? 'not right' : 'i dont know';
+let isRightAge5 = age >= 18 ? 'rigth' : age == 17 ? 'not right' : 'i dont know';
+// true fals
 console.log(isRightAge5);
