@@ -110,3 +110,6 @@ let getDayOfWeek = (dayNumber) => {
     return daysOfTheWeek[dayNumber] ||"Enter from 1 - 7";
 } 
 console.log(getDayOfWeek(9)); // Enter from 1-7
+
+
+
