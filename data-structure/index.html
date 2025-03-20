@@ -1,0 +1,101 @@
+Data Structures in JavaScript
+Data structures help in organizing and storing data efficiently. Here are the main types of data structures in JavaScript:
+
+1. Primitive Data Structures
+These are built-in types in JavaScript and store single values.
+
+Number → let num = 10;
+String → let str = "Hello";
+Boolean → let isTrue = true;
+Null → let empty = null;
+Undefined → let notDefined;
+Symbol → let sym = Symbol("id");
+BigInt → let bigNum = 12345678901234567890n;
+
+
+2. Non-Primitive Data Structures
+These can store multiple values and are more complex.
+
+A. Linear Data Structures
+1. Array → Stores multiple values in a single variable.
+
+<script>
+let arr = [1, 2, 3, 4, 5];
+</script>
+
+
+Access elements: arr[0]
+Add elements: arr.push(6)
+Remove elements: arr.pop()
+Iterate: arr.forEach(item => console.log(item))
+
+2. Linked List → A collection of nodes, where each node contains data and a reference to the next node.
+
+Singly Linked List
+Doubly Linked List
+
+3. Stack (LIFO - Last In, First Out) → Works like a pile of plates.
+
+<script>
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    push(element) {
+        this.items.push(element);
+    }
+    pop() {
+        return this.items.pop();
+    }
+    peek() {
+        return this.items[this.items.length - 1];
+    }
+}
+</script>
+
+Usage: Undo operations, function call stack.
+
+4. Queue (FIFO - First In, First Out) → Works like a line at a grocery store.
+
+<script>
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+    enqueue(element) {
+        this.items.push(element);
+    }
+    dequeue() {
+        return this.items.shift();
+    }
+}
+</script>
+
+Usage: Print jobs, scheduling.
+
+5. Deque (Double-ended Queue) → Can add/remove from both front and back.
+
+B. Non-Linear Data Structures
+
+1. Hash Table (Object/Map) → Stores key-value pairs.
+
+<script>
+let map = new Map();
+map.set("name", "Han");
+map.get("name"); // Han
+</script>
+
+
+
+2.Set → Stores unique values.
+
+<script>
+let set = new Set([1, 2, 3, 3]);
+console.log(set); // {1, 2, 3}
+</script>
+
+
+3. Tree (Binary Tree, BST, Trie, etc.) → Hierarchical structure. Usage: Search operations, auto-suggestions.
+
+4. Graph (Directed, Undirected, Weighted, etc.) → Represents relationships. Usage: Social networks, shortest path algorithms.
+

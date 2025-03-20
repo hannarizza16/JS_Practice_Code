@@ -84,3 +84,6 @@ class User {
 //Instantiate
 const userOne = new User ('John', 'Doe', 'johndoe@email')
 console.log(userOne.getUserInfo());
+
+// ----------------------
+
