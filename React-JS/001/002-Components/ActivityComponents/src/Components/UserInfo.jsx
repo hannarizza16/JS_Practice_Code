@@ -6,6 +6,7 @@ const UserInfo = () => {
         hobbies: ['cooking','reading','coding']
     }
 
+    // Destructuring the userObj 
     const {firstName, lastName, bio, hobbies} = userObj
     const fullName = `${firstName} ${lastName}`
     return (
