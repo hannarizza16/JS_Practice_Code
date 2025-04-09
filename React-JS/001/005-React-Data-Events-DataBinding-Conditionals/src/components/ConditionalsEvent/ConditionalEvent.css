@@ -1,0 +1,7 @@
+.authorized {
+    background-color: green;
+}
+
+.unauthorized {
+    background-color: red;
+}

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Props from './components/Props'
 import UseStateNumber from './components/UseStateNumber'
+import UseStateObject from './components/UseStateObject'
+import ReactEvents from './components/ReactEvents'
 import './App.css'
 
 function App() {
@@ -19,10 +21,25 @@ function App() {
       <h2>Props and useState</h2>
       <div className='props-container'>
         {players.map(({id, playerName, points, assists, rebounds}) => (
+
           <Props key={id}{...{id, playerName, points, assists, rebounds}} />
+
         ))}
       </div>
-      <UseStateNumber />
+      <UseStateNumber/>
+      
+       {/*players */}
+       <div className='usestate-object-container'>
+        <UseStateObject />
+       </div>
+      
+      <div className='react-events-container'>
+        <ReactEvents />
+      </div>
+      
+      
+
+
     </>
   )
 }
